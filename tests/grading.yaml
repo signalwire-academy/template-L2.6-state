@@ -1,0 +1,47 @@
+# Grading configuration for Lab 2.6: State Management
+
+assignment:
+  id: L2.6-state
+  name: "Lab 2.6: State Management"
+  level: 2
+  type: lab
+  passing_score: 70
+
+checks:
+  - id: instantiate
+    name: "Agent Instantiation"
+    points: 20
+    type: instantiate
+    file: solution/agent.py
+  - id: swml_valid
+    name: "SWML Generation"
+    points: 20
+    type: swml_valid
+    file: solution/agent.py
+  - id: func_store
+    name: "store_data function"
+    points: 30
+    type: function_exists
+    file: solution/agent.py
+    function: store_data
+  - id: func_retrieve
+    name: "retrieve_data function"
+    points: 30
+    type: function_exists
+    file: solution/agent.py
+    function: retrieve_data
+
+feedback:
+  pass: |
+    Excellent work! You've completed Lab 2.6: State Management.
+
+    **Next steps:**
+    - Review the concepts covered
+    - Continue to the next lab
+
+  fail: |
+    Some checks didn't pass. Review the requirements and try again.
+
+    **Tips:**
+    - Run `swaig-test solution/agent.py --list-tools` to verify functions
+    - Run `swaig-test solution/agent.py --dump-swml` to check SWML
